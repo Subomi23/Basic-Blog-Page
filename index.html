@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raqeeb Blog Page</title>
+    <style>
+      body{
+        background-color: darkgrey;
+        font-size: 19px;
+      }
+      #middle{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900px;
+      }
+      #chelsea{
+        padding: 5px;
+        border: 30px solid blue;
+      }
+      #mancity{
+        padding: 5px;
+        border: 30px solid lightblue
+      }
+      #real{
+        padding: 5px;
+        border: 30px solid whitesmoke
+      }
+      
+    </style>
   </head>
   <body>
-    <h1>Raqeeb's blog</h1>
+    <h1 id="middle">Raqeeb's blog</h1>
     <p>
       This page is all about different kind of blogs I have created. How I see
       different kinds of things and how I analyze them. It also contains thing I
@@ -14,26 +38,34 @@
     </p>
     <ul>
       <li>
-        <img src="./Chelsea logo pic.png" alt="Chlsea Football club logo" />
+        <section>
+        <img src="./Chelsea logo pic.png" alt="Chlsea Football club logo" id="chelsea"/>
       </li>
       <h3><a href="./chelsea.html">Chelsea Football club</a></h3>
       <p>I love chelsea and I am a very big fan of chelsea</p>
-
+ </section>
+ 
+      <hr \>
+      <section>
       <li>
-        <img src="./mancitylogo.png" alt="Manchester city Football club logo" />
+        <img src="./mancitylogo.png" alt="Manchester city Football club logo" id="mancity"/>
       </li>
       <h3><a href="./mancity.html">Manchester city Football club</a></h3>
       <p>How being a man city fan for the past 8 years feels</p>
-
+</section>
+       <hr \>
+      <section>
       <li>
-        <img src="./relamadridlogo.png" alt="Real Madrid Football club logo" />
+        <img src="./relamadridlogo.png" alt="Real Madrid Football club logo" id="real"/>
       </li>
       <h3><a href="./realmadrid.html">Real Madrid Football club</a></h3>
       <p>
         The feeling of having stars in their team and wanting to fight every
         trophy in Spain
       </p>
+      </section>
     </ul>
-    <footer>Abdul-Raqeeb Olaleye, 2025.</footer>
+    <hr \>
+    <footer id = "middle">Author: Abdul-Raqeeb Olaleye, 2025.</footer>
   </body>
 </html>
