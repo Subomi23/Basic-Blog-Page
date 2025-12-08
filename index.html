@@ -6,67 +6,86 @@
     <title>Raqeeb Blog Page</title>
     <style>
       .whole {
+        background-color: black;
+      }
+      .body {
         font-size: 19px;
         display: flex;
-        flex-direction: column;
-        gap: 10px;
+        gap: 2rem;
         justify-content: center;
-        align-items: center;
-        flex-basis: 100px;
+        align-content: center;
+        background-color: #282a35;
+      }
+      @media (max-width: 1250px) {
+        .body {
+          flex-direction: column;
+          height: 100%;
+        }
       }
       #middle {
         text-align: center;
         background-color: gold;
         font-size: 20px;
         font-weight: bold;
-        
       }
       #chelsea {
-    
+        height: 250px;
         padding: 0px;
-        border: 5px solid blue;
-        border-radius: 20%;
+        border: 0px solid blue;
+        border-radius: 5px;
       }
       #mancity {
-      
+        height: 250px;
         padding: 0px;
         border: 5px solid lightblue;
-        border-radius: 20%;
+        border-radius: 5px;
       }
       #real {
+        height: 250px;
         padding: 0px;
         border: 5px solid whitesmoke;
-        border-radius: 20%;
+        border-radius: 5px;
       }
       li {
         list-style: none;
       }
       p {
-        background-color: blanchedalmond;
+        text-align: center;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
       }
       .chel {
         flex: 1;
-      display: inline-flex;
+        background-color: blue;
+        padding: 0px;
       }
       .city {
         flex: 1;
+        padding: 24px;
+        background-color: aqua;
+        justify-content: space-between;
       }
-      .madrid {
+      .Madrid {
         flex: 1;
+        padding: 24px;
+        background-color: slategray;
       }
       .foot {
-background-color: whitesmoke;
-text-align: center;
+        background-color: whitesmoke;
+        text-align: center;
+        clear: both;
       }
       .paragraph {
-        
+        background-color: #ffc0c7;
       }
-      .link{
-color: red;
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
+
+      .link {
+        color: red;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h3 {
+        text-align: center;
       }
     </style>
   </head>
@@ -82,59 +101,60 @@ font-family: Arial, Helvetica, sans-serif;
           thing I love a lot and I care about.
         </p>
       </div>
+      <div class="body">
+        <div class="chel">
+          <ul>
+            <li>
+              <img
+                src="./Chelsea logo pic.png"
+                alt="Chlsea Football club logo"
+                id="chelsea"
+              />
+            </li>
 
-      <div class="chel">
-        <ul>
-          <li>
-            <img
-              src="./Chelsea logo pic.png"
-              alt="Chlsea Football club logo"
-              id="chelsea"
-            />
-          </li>
-          
-          <h3><a href="./chelsea.html" class="link">Chelsea Football club</a></h3>
-          <p>I love chelsea and I am a very big fan of chelsea</p>
-        </ul>
+            <h3>
+              <a href="./chelsea.html" class="link">Chelsea Football club</a>
+            </h3>
+            <p>I love chelsea and I am a very big fan of chelsea</p>
+          </ul>
+        </div>
+
+        <div class="city">
+          <ul>
+            <li>
+              <img
+                src="./mancitylogo.png"
+                alt="Manchester city Football club logo"
+                id="mancity"
+              />
+            </li>
+          </ul>
+          <h3>
+            <a href="./mancity.html" class="link"
+              >Manchester city Football club</a
+            >
+          </h3>
+          <p>How being a man city fan for the past 8 years feels</p>
+        </div>
+
+        <div class="Madrid">
+          <ul>
+            <li>
+              <img
+                src="./relamadridlogo.png"
+                alt="Real Madrid Football club logo"
+                id="real"
+              />
+            </li>
+          </ul>
+          <h3>
+            <a href="./realmadrid.html" class="link"
+              >Real Madrid Football club</a
+            >
+          </h3>
+          <p>The feeling of having stars in your team</p>
+        </div>
       </div>
-
-      <hr \ />
-
-      <div class="city">
-        <ul>
-          <li>
-            <img
-              src="./mancitylogo.png"
-              alt="Manchester city Football club logo"
-              id="mancity"
-            />
-          </li>
-        </ul>
-        <h3><a href="./mancity.html" class="link">Manchester city Football club</a></h3>
-        <p>How being a man city fan for the past 8 years feels</p>
-      </div>
-
-      <hr \ />
-
-      <div class="Madrid">
-        <ul>
-          <li>
-            <img
-              src="./relamadridlogo.png"
-              alt="Real Madrid Football club logo"
-              id="real"
-            />
-          </li>
-        </ul>
-        <h3><a href="./realmadrid.html" class="link">Real Madrid Football club</a></h3>
-        <p>
-          The feeling of having stars in their team and wanting to fight every
-          trophy in Spain
-        </p>
-      </div>
-
-      <hr \ />
-
       <div class="foot">
         <footer>Copyright: Abdul-Raqeeb Olaleye, 2025.</footer>
       </div>
